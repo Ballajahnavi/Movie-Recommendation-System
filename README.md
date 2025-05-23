@@ -32,10 +32,11 @@ Place movies.csv and tags.csv in the same directory as app.py
 
 ▶️ Run the App
 
-bash
+```bash
 Copy
 Edit
 streamlit run app.py
+```
 Then open the provided localhost URL in your browser.
 
 🧠 How It Works
@@ -52,13 +53,14 @@ Returns the top N similar movies based on a selected title
 
 📦 Project Structure
 
-bash
+```bash
 Copy
 Edit
 ├── app.py                # Streamlit app
 ├── movies.csv            # Movie metadata
 ├── tags.csv              # Movie tags
 ├── README.md             # Project README
+```
 vbnet
 Copy
 Edit
