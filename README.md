@@ -1,5 +1,7 @@
 #🎬 Movie Recommendation System  
 
+-
+
 This is a content-based movie recommender system built using the MovieLens 20M Dataset. It utilizes TF-IDF vectorization on movie genres and taglines to suggest similar movies. A simple Streamlit web interface is included for interactive recommendations.
 
 ---
@@ -74,6 +76,4 @@ Edit
 ├── tags.csv              # Movie tags
 ├── README.md             # Project README
 ```
-vbnet
-Copy
-Edit
+
