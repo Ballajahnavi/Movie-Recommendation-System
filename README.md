@@ -1,12 +1,11 @@
 #🎬 Movie Recommendation System  
 
 
-
 This is a content-based movie recommender system built using the MovieLens 20M Dataset. It utilizes TF-IDF vectorization on movie genres and taglines to suggest similar movies. A simple Streamlit web interface is included for interactive recommendations.
 
 ---
 
-🚀 Features  
+##🚀 Features  
 - Recommends movies based on genres and tags  
 - Clean and intuitive Streamlit interface  
 - Fast and lightweight – does not rely on user ratings  
@@ -14,7 +13,7 @@ This is a content-based movie recommender system built using the MovieLens 20M D
 
 ---
 
-📁 Dataset  
+##📁 Dataset  
 Source: [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/) by GroupLens
 
 Download and place the following files in your project directory:  
@@ -23,7 +22,7 @@ Download and place the following files in your project directory:
 
 ---
 
-🛠 Installation  
+##🛠 Installation  
 Clone the repository or download the project files.
 
 Install required Python packages:
@@ -41,7 +40,7 @@ Place movies.csv and tags.csv in the same directory as app.py
 
 ---
 
-▶️ Run the App
+##▶️ Run the App
 
 ```bash
 Copy
@@ -52,7 +51,7 @@ Then open the provided localhost URL in your browser.
 
 ---
 
-🧠 How It Works
+##🧠 How It Works
 
 Loads and merges movie metadata (genres, tags)
 
@@ -66,7 +65,7 @@ Returns the top N similar movies based on a selected title
 
 ---
 
-📦 Project Structure
+##📦 Project Structure
 
 ```bash
 Copy
