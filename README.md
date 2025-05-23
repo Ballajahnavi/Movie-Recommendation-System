@@ -18,8 +18,8 @@ A **content-based movie recommender system** built with the **MovieLens 20M Data
 **Source:** [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/) by GroupLens
 
 **Required Files (place in project directory):**  
-- `movies.csv`  
-- `tags.csv`
+- `movie.csv`  
+- `review.csv`
 
 ---
 
