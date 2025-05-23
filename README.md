@@ -1,19 +1,64 @@
-# Movie-Recommendation-System
+🎬 Movie Recommendation System  
+This is a content-based movie recommender system built using the MovieLens 20M Dataset. It utilizes TF-IDF vectorization on movie genres and taglines to suggest similar movies. A simple Streamlit web interface is included for interactive recommendations.
 
-A hybrid movie recommendation system using collaborative and content-based filtering with the MovieLens 20M dataset. Built with Python, Pandas, Scikit-learn, Surprise, NLTK, and Streamlit.
+🚀 Features  
+- Recommends movies based on genres and tags  
+- Clean and intuitive Streamlit interface  
+- Fast and lightweight – does not rely on user ratings  
+- Scalable to large datasets like MovieLens 20M  
 
-## Setup
-1. Clone the repository.
-2. Install dependencies: `pip install -r requirements.txt`
-3. Download MovieLens 20M dataset from Kaggle and place files in `data/`.
-4. Run the Jupyter notebook: `jupyter notebook notebooks/movie_recommendation_20m.ipynb`
-5. Launch Streamlit app: `streamlit run src/app.py`
+📁 Dataset  
+Source: [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/) by GroupLens
 
-## Dataset
-- MovieLens 20M: 20 million ratings, movie genres, user tags, and tag relevance scores.
+Download and place the following files in your project directory:  
+- `movies.csv`  
+- `tags.csv`  
 
-## Features
-- Collaborative filtering using SVD.
-- Content-based filtering using genres and tags.
-- Sentiment-based filtering using tag sentiment.
-- Interactive Streamlit UI for recommendations.
+🛠 Installation  
+Clone the repository or download the project files.
+
+Install required Python packages:
+
+```bash
+pip install streamlit pandas scikit-learn
+
+Download the dataset:
+
+Visit https://grouplens.org/datasets/movielens/20m/
+
+Download and extract the zip file
+
+Place movies.csv and tags.csv in the same directory as app.py
+
+▶️ Run the App
+
+bash
+Copy
+Edit
+streamlit run app.py
+Then open the provided localhost URL in your browser.
+
+🧠 How It Works
+
+Loads and merges movie metadata (genres, tags)
+
+Aggregates tags and genres per movie into a single feature
+
+Converts the combined text into numerical vectors using TF-IDF
+
+Computes cosine similarity between movies
+
+Returns the top N similar movies based on a selected title
+
+📦 Project Structure
+
+bash
+Copy
+Edit
+├── app.py                # Streamlit app
+├── movies.csv            # Movie metadata
+├── tags.csv              # Movie tags
+├── README.md             # Project README
+vbnet
+Copy
+Edit
