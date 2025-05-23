@@ -1,46 +1,47 @@
-#🎬 Movie Recommendation System  
+# 🎬 Movie Recommendation System
 
-
-This is a content-based movie recommender system built using the MovieLens 20M Dataset. It utilizes TF-IDF vectorization on movie genres and taglines to suggest similar movies. A simple Streamlit web interface is included for interactive recommendations.
-
----
-
-##🚀 Features  
-- Recommends movies based on genres and tags  
-- Clean and intuitive Streamlit interface  
-- Fast and lightweight – does not rely on user ratings  
-- Scalable to large datasets like MovieLens 20M  
+A **content-based movie recommender system** built with the **MovieLens 20M Dataset**, utilizing **TF-IDF vectorization** on genres and taglines to suggest similar films. The project features an interactive **Streamlit web interface** for a seamless user experience.
 
 ---
 
-##📁 Dataset  
-Source: [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/) by GroupLens
+## 🚀 Features
 
-Download and place the following files in your project directory:  
+- 🎯 Content-based recommendations using genres and tags  
+- 🧼 Clean, user-friendly Streamlit interface  
+- ⚡ Fast and efficient — no dependency on user ratings  
+- 📈 Scalable to large datasets (e.g., MovieLens 20M)
+
+---
+
+## 📁 Dataset
+
+**Source:** [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/20m/) by GroupLens
+
+**Required Files (place in project directory):**  
 - `movies.csv`  
-- `tags.csv`  
+- `tags.csv`
 
 ---
 
-##🛠 Installation  
-Clone the repository or download the project files.
+## 🛠 Installation
 
-Install required Python packages:
+1. **Clone the repository** or download the project files.
+
+2. **Install dependencies:**
 
 ```bash
 pip install streamlit pandas scikit-learn
 ```
-Download the dataset:
+3.Download the dataset:
 
-Visit https://grouplens.org/datasets/movielens/20m/
+- Visit MovieLens 20M Dataset
 
-Download and extract the zip file
+- Extract the downloaded ZIP
 
-Place movies.csv and tags.csv in the same directory as app.py
+- Place movies.csv and tags.csv in the same directory as app.py
 
----
-
-##▶️ Run the App
+## ▶️ Run the App
+To launch the Streamlit app, run:
 
 ```bash
 Copy
@@ -49,30 +50,24 @@ streamlit run app.py
 ```
 Then open the provided localhost URL in your browser.
 
----
+## 🧠 How It Works
 
-##🧠 How It Works
+1. Loads and merges metadata from movies.csv and tags.csv
 
-Loads and merges movie metadata (genres, tags)
+2. Aggregates tags and genres per movie into a unified text field
 
-Aggregates tags and genres per movie into a single feature
+3. Transforms text into numerical vectors using TF-IDF
 
-Converts the combined text into numerical vectors using TF-IDF
+4. Computes cosine similarity between all movie vectors
 
-Computes cosine similarity between movies
+5. Recommends top N similar movies based on the selected title
 
-Returns the top N similar movies based on a selected title
-
----
-
-##📦 Project Structure
-
+## 📦 Project Structure
 ```bash
 Copy
 Edit
-├── app.py                # Streamlit app
-├── movies.csv            # Movie metadata
-├── tags.csv              # Movie tags
-├── README.md             # Project README
+├── app.py           # Streamlit application
+├── movies.csv       # Movie metadata from MovieLens
+├── tags.csv         # Movie tags from MovieLens
+├── README.md        # Project documentation
 ```
-
