@@ -21,7 +21,7 @@ Install required Python packages:
 
 ```bash
 pip install streamlit pandas scikit-learn
-
+```
 Download the dataset:
 
 Visit https://grouplens.org/datasets/movielens/20m/
